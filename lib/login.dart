@@ -33,6 +33,12 @@ class _LoginPageState extends State<LoginPage>
     authStateProvider.subscribe(this);
   }
 
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   void createSnackBar(String message) {
     final snackBar = new SnackBar(content: new Text(message), backgroundColor: Colors.red);
     Scaffold.of(_context).showSnackBar(snackBar);

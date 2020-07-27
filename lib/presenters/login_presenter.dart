@@ -15,6 +15,7 @@ class LoginPresenter {
   doLogin(String username, String password) {
     api.login(username, password).then((ResponseAccount response) {
       if (response.status) {
+
         _view.onLoginSuccess(response);
       } else {
         _view.onLoginError('Pastikan username dan password anda benar!');

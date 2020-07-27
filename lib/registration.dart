@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:halopos/business.dart';
 import 'package:halopos/providers/auth_provider.dart';
 
 import 'utils/transition.dart';
@@ -196,7 +197,7 @@ class _RegistrationPageState extends State<RegistrationPage>
                               textColor: Colors.white,
                               color: Colors.blue,
                               onPressed: () {
-                                Navigator.pushReplacement(context, ScaleRoute(page: HomePage(title: 'Home')));
+                                Navigator.pushReplacement(context, ScaleRoute(page: BusinessPage()));
                               },
                               child: new Text("Registrasi"),
                             ),

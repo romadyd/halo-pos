@@ -35,7 +35,7 @@ class RestDatasource {
   /* ==== Authentication ==== */
   Future<ResponseAccount> login(String uid, String pwd) {
     return _netUtil.post(LOGIN, body: {
-      'mobile': uid,
+      'cellular': uid,
       'password': pwd
     }).then((dynamic res) {
       return ResponseAccount.fromJson(res);
